@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
     <title>Frontend Mentor | Sunnyside agency landing page</title>
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./index.css">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
         rel="stylesheet">
 </head>
@@ -22,17 +22,16 @@
                 <div class="navigation">
                     <div class="link">About</div>
                     <div class="link">Services</div>
-                    <div class="link">projects</div>
+                    <div class="link">Projects</div>
                     <div class="link-btn">Contact</div>
                 </div>
 
-                <div class="open"><img src="images/icon-hamburger.svg" alt=""></div>
-                <div class="close"><img src="images/icon-hamburger.svg" alt=""></div>
+                <div class="mobile-menu"><img src="images/icon-hamburger.svg" alt=""></div>
 
-                <div class="active-nav">
+                <div class="mobile-nav">
                     <div class="link">About</div>
                     <div class="link">Services</div>
-                    <div class="link">projects</div>
+                    <div class="link">Projects</div>
                     <div class="link-btn">Contact</div>
                 </div>
             </nav>
@@ -42,21 +41,32 @@
         </div>
 
         <div class="cards">
-            <div class="egg"><img src="images/desktop/image-transform.jpd" alt=""></div>
+            <div class="egg"></div>
 
-            <div class="brand text">
-                <h1>Transform your brand</h1>
-                <p>We are a full-service creative agency specializing in helping brands grow fast.
-                    Engage your clients through compelling visuals that do most of the marketing for you.</p>
-                <div class="learn-more yellow">Learn more</div>
+            <div class="cardBlock text brand">
+                <div class="text-block">
+                    <h1>Transform your brand</h1>
+                    <p>We are a full-service creative agency specializing in helping brands grow fast.
+                        Engage your clients through compelling visuals that do most of the marketing for you.</p>
+                    <div class="button">
+                        <div id="fstButton" class="learn-more">Learn more</div>
+                        <div id="fstHighlight"></div>
+                    </div>
+                </div>
             </div>
 
-            <div class="cup"><img src="images/desktop/image-stand-out.jpd" alt=""></div>
+            <div class="cup"></div>
 
-            <div class="stand text">
-                <h1>Stand out to the right audience</h1>
-                <p>Using a collaborative formula of designers, researchers, photographers, videographers, and
-                    copywriters, we’ll build and extend your brand in digital places.</p>
+            <div class="cardBlock text">
+                <div class="text-block">
+                    <h1>Stand out to the right audience</h1>
+                    <p>Using a collaborative formula of designers, researchers, photographers, videographers, and
+                        copywriters, we’ll build and extend your brand in digital places.</p>
+                    <div class="button">
+                        <div id="sndButton" class="learn-more pinck">Learn more</div>
+                        <div id="sndHighlight"></div>
+                    </div>
+                </div>
             </div>
 
             <div class="design font">
@@ -106,6 +116,7 @@
                     </div>
                 </div>
             </div>
+        </div>
 
             <div class="images">
                 <div class="image"><img src="images/desktop/image-gallery-milkbottles.jpg" alt="bottle"></div>

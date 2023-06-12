@@ -1,0 +1,428 @@
+/* Getting rid of default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Banner */
+.banner {
+    background-image: url(images/desktop/image-header.jpg);
+    /* background-image: url(https://th.bing.com/th/id/R.057b31be70cc73b9d0c829205f90e02f?rik=PxrTE7PkNVZoRg&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f08%2fCool-nature-backgrounds-hd-resolution-1920x1080.jpg&ehk=hQzPW7PZMRmNSlTgkm1V0lR4FopZ7yGKJtUMRedf8wM%3d&risl=&pid=ImgRaw&r=0); */
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    padding: 35px 40px;
+    display: flex;
+    gap: 110px;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navigation bar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    user-select: none;
+}
+
+/* Navigation to other pages */
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+
+/* Page link */
+.navigation .link {
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    color: white;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+/* "Contact" link button */
+.navigation .link-btn {
+    width: 140px;
+    height: 55px;
+    background-color: white;
+    /* Unique for .navigation */
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: hsl(212, 27%, 19%);
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+.navigation .link-btn:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* For narrow resolution */
+.mobile-nav {
+    position: absolute;
+    width: 90%;
+    top: 100px;
+    background-color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 40px 40px;
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.mobile-nav .link {
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    color: hsl(232, 10%, 55%);
+
+    cursor: pointer;
+    user-select: none;
+}
+
+.mobile-nav .link-btn {
+    width: 140px;
+    height: 55px;
+    background-color: hsl(51, 100%, 49%);
+    /* Unique for .active-nav */
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: hsl(212, 27%, 19%);
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+.mobile-nav .link-btn:hover {
+    background-color: hsla(51, 100%, 49%, 0.4);
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.heading {
+    font-family: 'Fraunces', serif;
+    font-size: 54px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+/* I think this is the best way to work with the images */
+/* The only question is height */
+.egg {
+    background: url(./images/desktop/image-transform.jpg), no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.cup {
+    background: url(./images/desktop/image-stand-out.jpg), no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.cardBlock {
+    height: 40vw;
+    /* min-height: 300px; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-block {
+    max-width: 450px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.brand {
+    /* grid coordinates */
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.design {
+    background: url(images/desktop/image-graphic-design.jpg);
+    width: 100%;
+    height: 40vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 30px;
+
+    padding: 0px 150px 60px 150px;
+
+    color: hsl(167, 40%, 24%);
+}
+
+.photography {
+    background: url(images/desktop/image-photography.jpg);
+    width: 100%;
+    height: 40vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 30px;
+
+    padding: 0px 150px 60px 150px;
+
+    color: hsl(198, 62%, 26%);
+}
+
+.text h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 42px;
+    color: hsl(212, 27%, 19%);
+}
+
+.text p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: hsl(232, 10%, 55%);
+    line-height: 150%;
+}
+
+.learn-more {
+    font-family: 'Fraunces', serif;
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    position: relative;
+    color: hsl(212, 27%, 19%);
+    cursor: pointer;
+
+    user-select: none;
+}
+
+.button {
+    height: 29px;
+}
+
+.highlighted {
+    display: block;
+    position: relative;
+    top: -10px;
+    height: 10px;
+    z-index: -1;
+    border-radius: 10px;
+    width: 135px;
+    left: -2.5%;
+    bottom: -3px;
+}
+
+.yellow {
+    background-color: hsla(51, 70%, 60%, 0.952);
+}
+
+.pink {
+    background-color: hsl(7, 99%, 70%);
+}
+
+/* From here looks good */
+
+.font h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 34px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.font p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: hsl(212, 27%, 19%);
+    line-height: 150%;
+    text-align: center;
+}
+
+.testimonial {
+    width: 100%;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 85px;
+
+    padding: 200px 170px;
+}
+
+.testimonial h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 20px;
+    letter-spacing: 10px;
+    color: hsl(210, 4%, 67%);
+    text-transform: uppercase;
+}
+
+.clients {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 65px;
+
+    text-align: center;
+}
+
+.review img {
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+}
+
+.review p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: hsl(213, 9%, 39%);
+    line-height: 150%;
+    text-align: center;
+}
+
+.name h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 18px;
+    letter-spacing: 0px;
+    color: hsl(212, 27%, 19%);
+    text-transform: capitalize;
+}
+
+.name p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: hsl(210, 4%, 67%);
+    line-height: 150%;
+    text-align: center;
+}
+
+.images {
+    display: flex;
+    width: 100%;
+}
+
+.images img {
+    width: 100%;
+    display: block;
+}
+
+.footer {
+    width: 100%;
+    height: 50vh;
+    background-color: #90d4c5;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    color: hsl(167, 40%, 24%) !important;
+}
+
+.navigation-footer {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    color: hsl(167, 40%, 24%);
+}
+
+.social {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* This can't affect display option after it was changed with JS! */
+@media (min-width: 1024px) {
+    .mobile-nav {
+        display: none;
+    }
+}
+
+/* !!! Styles for Resolution < 1024px !!! */
+@media (max-width: 1024px) {
+    .banner {
+        gap: 90px;
+        padding: 35px 24px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .heading {
+        font-size: 36px;
+    }
+}
