@@ -143,11 +143,6 @@
     grid-template-columns: 1fr 1fr;
 }
 
-.card img {
-    width: 100%;
-    display: block;
-}
-
 /* I think this is the best way to work with the images */
 /* The only question is height */
 .egg {
@@ -273,8 +268,6 @@
     background-color: hsl(7, 99%, 70%);
 }
 
-/* From here looks good */
-
 .font h1 {
     font-family: 'Fraunces', serif;
     font-size: 34px;
@@ -363,7 +356,7 @@
 
 .images {
     display: flex;
-    width: 100%;
+    width: 100%;                            /* 100% of the parent works better then 100vw */
 }
 
 .images img {
@@ -424,5 +417,126 @@
 
     .heading {
         font-size: 36px;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .egg,
+    .cup,
+    .cardBlock{
+        height: 55vw;
+    }
+
+    .text-block{
+        align-items: center;
+    }
+
+    .design,
+    .photography{
+        height: 100vw;
+        padding: 150px 150px;
+    }
+
+    .text h1{
+        font-size: 36px;
+    }
+
+    .text p{
+        font-size: 16px;
+    }
+
+    .learn-more{
+        font-size: 14px;
+    }
+
+    .font h1 {
+        font-size: 28px;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+    
+    .font p {
+        font-size: 18px;
+        line-height: 150%;
+        text-align: center;
+    }
+
+    .testimonial{
+        padding: 100px 50px;
+    }
+
+    .testimonial h1 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .testimonial p {
+        font-size: 16px;
+    }
+
+    .clients {
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+
+/* Okay, this is just fun! */
+@media (max-width: 768px){
+    .design,
+    .photography{
+        height: 100vw;
+        padding: 80px 120px;
+    }
+}
+
+@media (max-width: 555px){
+    .design,
+    .photography{
+        height: 100vw;
+        padding: 60px 70px;
+    }
+}
+
+@media (max-width: 490px){
+    .design,
+    .photography{
+        height: 100vw;
+        padding: 40px 30px;
+    }
+
+    .cardBlock{
+        height: fit-content;
+    }
+
+    .text-block{
+        padding: 0px 20px;
+    }
+
+    .text h1{
+        font-size: 28px;
+    }
+
+    .text p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px){
+    .design,
+    .photography{
+        height: 120vw;
+        padding: 10px 10px;
+    }
+
+    .font h1{
+        font-size: 20px;
+    }
+
+    .font p{
+        font-size: 14px;
     }
 }
